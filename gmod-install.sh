@@ -4,8 +4,8 @@
 #  Script développer par Rudelle65  #
 # ----------------------------------#
 
-sudo apt-get -y update
-sudo apt-get -y install screen lib32gcc1 wget curl ca-certificates
+apt-get -y update
+apt-get -y install screen lib32gcc1 wget curl ca-certificates
 
 wget https://raw.githubusercontent.com/Rudelle65/LinuxGmod/master/gmod-server
 chmod -R +x gmod-server.sh
@@ -18,7 +18,7 @@ chmod -R +x steamcmd
 mkdir serverfiles
 chmod -R +x serverfiles
 cd steamcmd
-bash ./steamcmd.sh +login anonymous +force_install_dir ../serverfiles +app_update 4020 validate +quit
+./steamcmd.sh +login anonymous +force_install_dir ../serverfiles +app_update 4020 validate +quit
 cd ..
 
 mkdir .steam
