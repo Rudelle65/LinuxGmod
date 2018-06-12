@@ -5,21 +5,24 @@
 # ----------------------------------#
 
 apt-get -y update
-apt-get -y install screen lib32gcc1 wget curl ca-certificates
+apt-get -y install screen lib32gcc1 wget curl ca-certificates dos2unix
 
 wget https://raw.githubusercontent.com/Rudelle65/LinuxGmod/master/gmod-server
-chmod -R +x gmod-server.sh
+dos2unix gmod-server
+chmod -R +x gmod-server
 
 mkdir steamcmd
+cd steamcmd
 curl -sSL -o steamcmd.tar.gz http://media.steampowered.com/installer/steamcmd_linux.tar.gz
-tar -xzvf steamcmd.tar.gz -C steamcmd
+tar -xzvf steamcmd.tar.gz
+cd ..
 chmod -R +x steamcmd
 
 mkdir serverfiles
-chmod -R +x serverfiles
 cd steamcmd
 ./steamcmd.sh +login anonymous +force_install_dir ../serverfiles +app_update 4020 validate +quit
 cd ..
+chmod -R +x serverfiles
 
 mkdir .steam
 cd .steam
