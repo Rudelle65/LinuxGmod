@@ -1,9 +1,7 @@
 #!/bin/bash
 
 # ----------------------------------#
-#									#
 #   Script developed by Rudelle65   #
-#									#
 # ----------------------------------#
 
 sudo apt-get -y update
