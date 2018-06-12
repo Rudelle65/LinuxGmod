@@ -39,6 +39,7 @@ wget https://raw.githubusercontent.com/Rudelle65/LinuxGmod/master/server.cfg
 chmod -R +x server.cfg
 cd ../../..
 
+clear
 echo "Your server has been installed!"
 echo "Enter [./gmod-server start] to start the server."
 exit
