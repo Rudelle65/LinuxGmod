@@ -57,13 +57,15 @@ if [ -z "$1" ]; then
         echo "To stop the server: stop"
         echo "To restart the server: restart"
         echo "To open the console: console"
+        echo "To update your server: update"
         exit
 fi
-if [ "$1" != "start" ]&&[ "${1}" != "stop" ]&&[ "${1}" != "restart" ]&&[ "${1}" != "console" ]; then
+if [ "$1" != "start" ]&&[ "${1}" != "stop" ]&&[ "${1}" != "restart" ]&&[ "${1}" != "console" ]&&[ "${1}" != "update" ]; then
         echo "List of commands:"
         echo "To start the server: start"
         echo "To stop the server: stop"
         echo "To restart the server: restart"
+        echo "To update your server: update"
         exit
 fi
 
