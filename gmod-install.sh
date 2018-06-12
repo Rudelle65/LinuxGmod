@@ -5,7 +5,7 @@
 # ----------------------------------#
 
 apt-get -y update
-apt-get -y install screen lib32gcc1 wget curl ca-certificates dos2unix lib32stdc++6
+apt-get -y install screen lib32gcc1 wget curl ca-certificates dos2unix lib32stdc++6 lib32tinfo5
 
 wget https://raw.githubusercontent.com/Rudelle65/LinuxGmod/master/gmod-server
 dos2unix gmod-server
