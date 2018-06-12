@@ -28,8 +28,9 @@ cp -v linux32/steamclient.so ../.steam/sdk32/steamclient.so
 
 mkdir config
 chmod +x config
+cd config
 wget https://raw.githubusercontent.com/Rudelle65/LinuxGmod/master/server.cfg
-mv server.cfg /config/server.cfg
+cd ..
 
 echo "Your server has been installed!"
 exit
