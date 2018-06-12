@@ -7,7 +7,7 @@
 sudo apt-get -y update
 sudo apt-get -y install screen lib32gcc1 wget curl ca-certificates
 
-wget https://raw.githubusercontent.com/Rudelle65/LinuxGmod/master/gmod-server.sh
+wget https://raw.githubusercontent.com/Rudelle65/LinuxGmod/master/gmod-server
 chmod +x gmod-server.sh
 
 mkdir steamcmd
