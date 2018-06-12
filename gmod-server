@@ -24,8 +24,6 @@ customparms="+r_hunkalloclightmaps 0 -disableluarefresh" # Custom Start Paramete
 ###### Do not edit #####
 ########################
 
-servercfg="config/server.cfg"
-
 consoleYN() {
     local prompt default reply
     while true; do
@@ -72,7 +70,7 @@ fi
 if [ "$1" == "start" ]; then
         echo "Your server is starting up."
         cd serverfiles
-        screen -dmS ${ScreenName} ./srcds_run -game garrysmod -strictportbind -ip ${ip} -port ${port} -tickrate ${tickrate} -maxplayers ${maxplayers} +host_workshop_collection ${workshopcollectionid} -authkey ${workshopauth} +gamemode ${gamemode} +map ${defaultmap} +servercfgfile ${servercfg} ${customparms}
+        screen -dmS ${ScreenName} ./srcds_run -game garrysmod -strictportbind -ip ${ip} -port ${port} -tickrate ${tickrate} -maxplayers ${maxplayers} +host_workshop_collection ${workshopcollectionid} -authkey ${workshopauth} +gamemode ${gamemode} +map ${defaultmap} ${customparms}
         cd ..
         exit
 fi
