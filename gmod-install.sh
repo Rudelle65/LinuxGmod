@@ -33,12 +33,11 @@ cd steamcmd
 cp -v linux32/steamclient.so ../.steam/sdk32/steamclient.so
 cd ..
 
-cd serverfiles
-mkdir config
-chmod -R +x config
-cd config
+cd serverfiles/garrysmod/cfg
+rm server.cfg
 wget https://raw.githubusercontent.com/Rudelle65/LinuxGmod/master/server.cfg
-cd ../..
+chmod -R +x server.cfg
+cd ../../..
 
 echo "Your server has been installed!"
 echo "Enter [./gmod-server start] to start the server."
