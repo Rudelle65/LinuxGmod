@@ -97,7 +97,9 @@ fi
 if [ "$1" == "update" ]; then
         if consoleYN "Are you sure you want to update your server?"; then
             ./gmod-server stop
-            ./steamcmd/steamcmd.sh +login anonymous +force_install_dir ../serverfiles +app_update 4020 validate +quit
+            cd steamcmd
+            ./steamcmd.sh +login anonymous +force_install_dir ../serverfiles +app_update 4020 validate +quit
+            cd ..
         else
             echo "Update process stopped."
         fi
