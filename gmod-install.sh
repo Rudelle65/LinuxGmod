@@ -21,10 +21,14 @@ cd steamcmd
 bash ./steamcmd.sh +login anonymous +force_install_dir ../serverfiles +app_update 4020 validate +quit
 cd ..
 
-mkdir /.steam
-mkdir /.steam/sdk32
+mkdir .steam
+cd .steam
+mkdir sdk32
+cd ..
 chmod -R +x .steam
+cd steamcmd
 cp -v linux32/steamclient.so ../.steam/sdk32/steamclient.so
+cd ..
 
 mkdir config
 chmod -R +x config
