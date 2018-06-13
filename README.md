@@ -10,7 +10,7 @@ Before starting the installation please execute the following commands.
 apt-get update && apt-get upgrade && apt-get install wget
 ```
 
-### Installing
+## Installing
 
 Create a folder where you want to install your server.
 
