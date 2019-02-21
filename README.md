@@ -1,6 +1,6 @@
 # LinuxGmod
 
-Automatic Installer for Garry's Mod
+Automatic Installer for Garry's Mod Server
 
 ## Prerequisites
 
